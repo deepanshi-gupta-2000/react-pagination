@@ -1,0 +1,22 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card{
+    border: 2px solid black;
+    background-color: aliceblue;
+    padding: 20px;
+    height: 230px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card > img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+
+}
