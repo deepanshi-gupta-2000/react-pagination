@@ -94,13 +94,13 @@ function App() {
             data.products.map((product) => { return <Cards key={product.id} product={product} /> })
           }</div>
           <div className='footer'>
-            <span className='cell' onClick={handlePrevClick} aria-disabled={page == 1}>⏮</span>
+            <span className='cell' onClick={handlePrevClick} aria-disabled={page === 1}>⏮</span>
             {
               [...new Array(range)].map((_, index) => {
                 return <span className='cell' key={index} onClick={() => {handleOnPageClick(index + 1)}}>{index + 1}</span>
               })
             }
-            <span className='cell' onClick={handleNextClick} aria-disabled={page == range}>⏭</span>
+            <span className='cell' onClick={handleNextClick} aria-disabled={page === range}>⏭</span>
           </div>
         </div>
       )}
